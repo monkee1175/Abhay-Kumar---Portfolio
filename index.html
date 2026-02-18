@@ -5,220 +5,173 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abhay Kumar — Filmmaker & Creative Director</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body {
-  background: #000;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 30px 60px;
-  display: flex;
-  justify-content: space-between;
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 30px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  transition: opacity 0.3s ease;
-}
-
-nav a:hover {
-  opacity: 0.6;
+  background:#000;
+  color:#fff;
+  font-family:'Inter', sans-serif;
+  line-height:1.7;
 }
 
 section {
-  padding: 140px 60px;
-  max-width: 1200px;
-  margin: auto;
+  padding:120px 80px;
+  max-width:1000px;
+  margin:auto;
 }
 
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.hero h1 {
-  font-size: 72px;
-  font-weight: 300;
-}
-
-.hero p {
-  margin-top: 20px;
-  font-size: 20px;
-  opacity: 0.7;
+h1 {
+  font-size:64px;
+  font-weight:300;
 }
 
 h2 {
-  font-size: 40px;
-  font-weight: 300;
-  margin-bottom: 60px;
+  font-size:36px;
+  font-weight:300;
+  margin-bottom:40px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+h3 {
+  font-size:22px;
+  font-weight:500;
+  margin-top:40px;
+  margin-bottom:10px;
 }
 
-.card {
-  border: 1px solid rgba(255,255,255,0.1);
-  padding: 40px;
-  transition: 0.4s ease;
+p {
+  opacity:0.8;
+  margin-bottom:15px;
 }
 
-.card:hover {
-  border-color: rgba(255,255,255,0.4);
-  transform: translateY(-5px);
+a {
+  color:#fff;
+  text-decoration:none;
+  opacity:0.8;
+  transition:0.3s;
 }
 
-.card h3 {
-  font-weight: 400;
-  margin-bottom: 20px;
+a:hover {
+  opacity:1;
 }
 
-footer {
-  padding: 100px 60px;
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.1);
+.hero {
+  height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
-.contact a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
+.divider {
+  border-top:1px solid rgba(255,255,255,0.15);
+  margin:80px 0;
 }
 
-@media(max-width: 768px){
-  nav {
-    padding: 20px 30px;
-  }
-
+@media(max-width:768px){
   section {
-    padding: 100px 30px;
+    padding:80px 30px;
   }
 
-  .hero h1 {
-    font-size: 42px;
+  h1 {
+    font-size:42px;
   }
 }
 
 </style>
 </head>
+
 <body>
 
-<nav>
-  <div>Abhay Kumar</div>
-  <div>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#services">Services</a>
-    <a href="#tools">Tools</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
+<!-- HERO -->
 <section class="hero">
-  <div>
-    <h1>Filmmaker & Creative Director</h1>
-    <p>Building films, systems, and visual narratives.</p>
-  </div>
+  <h1>Abhay Kumar</h1>
+  <p>Filmmaker & Creative Director</p>
 </section>
 
-<section id="about">
-  <h2>About</h2>
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
   <p>
-    I work at the intersection of storytelling, structure, and lived experience.
-    My practice spans filmmaking, education media, and spatial narratives.
-    Media is not decoration — it is direction.
+    I am a filmmaker and creative director working across documentary cinema, education media, and real estate storytelling.
+  </p>
+  <p>
+    My work combines research, narrative structure, and visual precision. Whether operating as a cinematographer or leading full-scale productions, I focus on clarity of intent and depth of execution.
+  </p>
+  <p>
+    I approach media as a system — not as decoration.
   </p>
 </section>
 
-<section id="portfolio">
-  <h2>Portfolio</h2>
+<div class="divider"></div>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Filmmaking</h3>
-      <p>Documentaries, short films, interviews, experimental work.</p>
-    </div>
+<!-- AREAS -->
+<section>
+  <h2>Areas</h2>
 
-    <div class="card">
-      <h3>Education Media</h3>
-      <p>Research communication, learning systems, institutional storytelling.</p>
-    </div>
+  <h3>Filmmaking</h3>
+  <p>Documentary, narrative, and experimental cinema.</p>
 
-    <div class="card">
-      <h3>Real Estate Marketing</h3>
-      <p>Spatial storytelling, walkthrough films, developer narratives.</p>
-    </div>
-  </div>
+  <h3>Education Media</h3>
+  <p>Structured media built for research communication and knowledge systems.</p>
+
+  <h3>Real Estate Marketing</h3>
+  <p>Visual storytelling for land, architecture, and spatial experience.</p>
 </section>
 
-<section id="services">
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section>
   <h2>Services</h2>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Filmmaking</h3>
-      <p>Concept to final cut.</p>
-    </div>
-
-    <div class="card">
-      <h3>Creative Direction</h3>
-      <p>Narrative architecture and visual strategy.</p>
-    </div>
-
-    <div class="card">
-      <h3>Media Strategy</h3>
-      <p>Long-term positioning and communication systems.</p>
-    </div>
-  </div>
-</section>
-
-<section id="tools">
-  <h2>Tools</h2>
+  <h3>Cinematography</h3>
   <p>
-    Adobe Premiere Pro — After Effects — DaVinci Resolve — Photoshop<br>
-    Professional Cinema Cameras — Audio Systems — Lighting Systems
+    Professional cinematography using the Sony FX30 (Cinema Line) camera system.
+  </p>
+
+  <h3>Full Scale Production</h3>
+  <p>
+    From research and pre-production to production and post-production, I execute complete media projects with my team.
+  </p>
+  <p>
+    Post-production collaboration with editor:
+    <a href="https://shivamstudios.carrd.co/" target="_blank">Shivam Studios</a>
+  </p>
+
+  <h3>Creative Direction</h3>
+  <p>
+    In-depth analysis and execution strategy for brands, individuals, and institutions — including media architecture, SMMA alignment, website direction, and brand assets.
   </p>
 </section>
 
-<footer id="contact">
-  <h2>Contact</h2>
-  <div class="contact">
-    <p><a href="mailto:abhaywork28@gmail.com">abhaywork28@gmail.com</a></p>
-    <p><a href="https://wa.me/919798699364">WhatsApp</a></p>
-  </div>
-  <p style="margin-top:40px; opacity:0.5;">© 2026 Abhay Kumar</p>
-</footer>
+<div class="divider"></div>
+
+<!-- TOOLS -->
+<section>
+  <h2>Tools</h2>
+
+  <p><strong>Production:</strong> Sony FX30 — Cinema Line Camera</p>
+  <p><strong>Design:</strong> Figma</p>
+  <p><strong>Post Production:</strong> DaVinci Resolve</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact Me</h2>
+  <p>Phone / WhatsApp: +91 9798699364</p>
+  <p>Email: <a href="mailto:abhaywork28@gmail.com">abhaywork28@gmail.com</a></p>
+</section>
 
 </body>
 </html>
-
